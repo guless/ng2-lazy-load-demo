@@ -9,9 +9,13 @@
     "ngc": "ngc",
     "webpack": "webpack",
     "watch": "webpack -w",
-    "build": "npm run clean && npm run ngc && webpack --config webpack.config.prod.js && npm run clean:ngc",
+    
+    "start": "webpack-dev-server --inline --progress --port 8000",
+    
+    "build": "npm run clean && npm run ngc && webpack --config webpack.config.prod.js && npm run clean:ngc && npm run build:server",
+    "build:server": "browser-sync start --server --files dist/*.js --files *.html --port 8000",
+    
     "build:ghpages": "npm run ngc && webpack --config webpack.config.ghpages.js && npm run clean:ngc",
-    "start": "browser-sync start --server --files dist/*.js --files *.html --port 8000",
     "predeploy-win": "npm run clean && npm run build:ghpages && mkdir dist\\dist && move dist\\*.js dist\\dist && move dist\\*.map dist\\dist && copy *.html dist",
     "deploy-win": "gh-pages -d dist",
     "predeploy": "npm run clean && npm run build:ghpages && mkdir -p dist/dist && mv dist/*.js dist/dist && mv dist/*.map dist/dist && cp *.html dist",
@@ -52,6 +56,7 @@
     "ts-helpers": "^1.1.1",
     "typescript": "^2.0.3",
     "webpack": "^2.1.0-beta.25",
-    "webpack-merge": "^0.14.1"
+    "webpack-merge": "^0.14.1",
+    "webpack-dev-server": "^1.14.1"
   }
 }

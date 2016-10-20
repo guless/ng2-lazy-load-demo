@@ -18,5 +18,9 @@ module.exports = merge({}, config, {
       sourceMap: true
     })
   ],
-  devtool: "sourcemap",
+  entry: {
+    bundle: "./src/index",
+    bundle_aot: "./src/index-aot"
+  },
+  devtool: "sourcemap"
 });

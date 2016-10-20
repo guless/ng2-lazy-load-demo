@@ -19,8 +19,7 @@ module.exports = {
     ]
   },
   entry: {
-    bundle: "./src/index",
-    bundle_aot: "./src/index-aot"
+    bundle: "./src/index"
   },
   output: {
     path: path.resolve(__dirname, "dist"),

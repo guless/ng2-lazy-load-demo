@@ -11,14 +11,41 @@ https://winpzs.github.io/ng2-lazy-load-demo/index.html
 
 https://winpzs.github.io/ng2-lazy-load-demo/index_aot.html
 
-## Build
+## Install
 
-To build this in your local machine, clone this repository and exec the following:
+安装依赖
 
 ```sh
-npm i
-npm run build
+npm install
+```
+
+## Start
+
+起动webpack-dev-server服务，开始开发代码:
+
+```sh
 npm start
+```
+
+## Build
+
+编译发布，并起动browser-sync服务，浏览效果:
+
+```sh
+npm run build
+```
+
+## Publish To Git **gh-pages**
+
+编译并自动发布到gh-pages:
+
+```sh
+npm run deploy
+```
+
+**window 版本**
+```sh
+npm run deploy-win
 ```
 
 ## How to implement async sub module loading?
@@ -109,4 +136,5 @@ And the following part of webpack.config.js is important:
 ```
 
 Please see also [https://github.com/quramy/ng2-lazy-load-demo](https://github.com/quramy/ng2-lazy-load-demo).
+
 Please see also [https://github.com/Quramy/angular2-load-children-loader](https://github.com/Quramy/angular2-load-children-loader).
