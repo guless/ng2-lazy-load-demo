@@ -4,6 +4,6 @@ const config = require("./webpack.config.prod");
 
 module.exports = merge({}, config, {
   output: {
-    publicPath: "https://quramy.github.io/ng2-lazy-load-demo/dist/"
+    publicPath: "https://winpzs.github.io/ng2-lazy-load-demo/dist/"
   },
 });

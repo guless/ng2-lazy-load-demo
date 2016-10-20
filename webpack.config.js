@@ -24,7 +24,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, "dist"),
-    publicPath: "http://localhost:3000/dist/",
+    publicPath: "http://localhost:8000/dist/",
     filename: "[name].js",
     chunkFilename: "[name].chunk.js",
   },
