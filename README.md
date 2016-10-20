@@ -7,7 +7,9 @@ The AoT demo uses `ngc`([angular/compiler-cli](https://github.com/angular/angula
 
 ## Demonstration
 
-https://quramy.github.io/ng2-lazy-load-demo/index.html
+https://winpzs.github.io/ng2-lazy-load-demo/index.html
+
+https://winpzs.github.io/ng2-lazy-load-demo/index_aot.html
 
 ## Build
 
@@ -106,4 +108,5 @@ And the following part of webpack.config.js is important:
 // ...
 ```
 
+Please see also [https://github.com/quramy/ng2-lazy-load-demo](https://github.com/quramy/ng2-lazy-load-demo).
 Please see also [https://github.com/Quramy/angular2-load-children-loader](https://github.com/Quramy/angular2-load-children-loader).
